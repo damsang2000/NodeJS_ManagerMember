@@ -1,0 +1,25 @@
+<div>
+  <h1>Skill của tôi</h1>
+  <table class="table" style="margin: auto;width: 80%;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên Kỹ năng</th>
+        <th scope="col">Thời gian tạo</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each skill}}
+        <tr>
+          <th scope="row">{{sum @index 1}}</th>
+          <td>{{this.name}}</td>
+          <td>{{this.createdAt}}</td>
+          <td><a  class="btn btn-primary" href="/skill/{{this._id}}/edit"/>Sửa</a></td>
+          <td><button type="button" class="btn btn-warning">Xóa</button></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>;

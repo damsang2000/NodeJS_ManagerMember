@@ -1,0 +1,8 @@
+<div class="mt-4" style="margin: 12rem;">
+  <form action="/skill/{{skill._id}}?_method=PUT" method="post">
+    <h3>Sửa kỹ năng</h3>
+    <input value="{{skill.name}}" type="text" placeholder="Nhập tên kỹ năng" class="form-control" name="name"/>
+    <input value="{{skill.slug}}" type="text" placeholder="Nhập slug" class="form-control" name="slug"/>
+    <button class="btn btn-primary" type="submit">Sửa</button>
+  </form>
+</div>

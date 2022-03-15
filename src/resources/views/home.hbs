@@ -1,1 +1,16 @@
-<h1>Hello world</h1>
+<div class="mt-4">
+  <div class="row">
+    {{#each skills}}
+      <div class="col-sm-6 col-lg-4">
+        <div class="card" style="margin-left: 20px;">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <a href="/skill/{{this.slug}}"><h5 class="card-title">Card title</h5></a>
+            <p class="card-text">{{this.name}}</p>
+            <a href="/skill/{{this.slug}}" class="btn btn-primary">Xem</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
